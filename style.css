@@ -1,0 +1,50 @@
+    body{
+        background-color: rgb(85, 85, 85);
+    }
+    #clockcontainer {
+        position: relative;
+        /* parent ki position relative krne se iss ke childs apne aap ko iss ke relative adjust krein  */
+        margin: auto;
+        /* height: 40vw;
+        width: 40vw; */
+        height: 440px;
+        width: 440px;
+        background: url(clock.png) no-repeat;
+        background-size: 100%;
+        filter: drop-shadow(2px 4px 10px black);
+    }
+
+    #hour,
+    #minute,
+    #second {
+        /* agar hm is ke parent clockcontainer ko relative ni krnein ge to position: absolute; krne se ye html tag parent ke relative sare adjustment kre ga */
+        position: absolute;
+        background-color: black;
+        border-radius: 10px;
+        transform-origin: bottom;
+        /* transform-origin: bottom; se ye jb bhi rotate ho gi to ye bottom se hogi . iss tarha hm transform-orgin se hm iss ki movement ke bare mai bta skte hn ke kahan se wo ho */
+    }
+
+    #hour {
+        width: 1.7%;
+        height: 24%;
+        top: 26%;
+        left: 48.9%;
+        opacity: 0.8;
+    }
+
+    #minute {
+        width: 1.5%;
+        height: 35%;
+        top: 15%;
+        left: 49%;
+        opacity: 0.8;
+    }
+
+    #second {
+        width: 1%;
+        height: 40%;
+        top: 10%;
+        left: 49.2%;
+        opacity: 0.8;
+    }
